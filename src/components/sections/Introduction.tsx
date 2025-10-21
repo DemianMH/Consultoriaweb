@@ -26,7 +26,8 @@ export default function Introduction() {
               Somos una firma de consultoría especializada con la experiencia pedagógica en innovación educativa en soluciones de gestión y desarrollo curricular.
             </p>
             <p>
-              Nuestra historia se remonta a 1998, y a partir del 13 de junio de 2017, surgimos como empresa constituida "Consultoría en Innovación Pedagógica y Certificaciones Profesionales S.C." en Querétaro.
+              {/* --- CORRECCIÓN AQUÍ --- */}
+              Nuestra historia se remonta a 1998, y a partir del 13 de junio de 2017, surgimos como empresa constituida &ldquo;Consultoría en Innovación Pedagógica y Certificaciones Profesionales S.C.&rdquo; en Querétaro.
             </p>
             <p>
               A través de nuestra experiencia, hemos ayudado a más de 80 Instituciones Educativas a obtener sus proyectos curriculares.
