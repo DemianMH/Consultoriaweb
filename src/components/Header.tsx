@@ -38,7 +38,7 @@ export default function Header() {
               height={50} // Alto intrínseco/máximo
               priority
               // --- CORRECCIÓN: Clases para hacerlo responsivo ---
-              className="w-[100px] md:w-[130px] h-auto"
+              className="w-[80px] md:w-[110px] h-auto"
             />
           </Link>
           
