@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-brand-dark text-brand-gray-light pt-16 pb-8">
       <div className="container mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h4 className="font-display text-2xl font-bold text-white mb-4">INAPECC</h4>
+          <h4 className="font-display text-2xl font-bold text-white mb-4">INAPECC CONSULTORÍA</h4>
           <p className="text-sm text-brand-gray-medium mb-4">
             Evolucionamos tus ideas en innovación educativa y desarrollo curricular.
           </p>
@@ -51,7 +51,7 @@ export default function Footer() {
             </p>
             <p>
               <a href="https://inapecc.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-accent transition-colors duration-300">
-                inapecc.com
+                contacto@inapecc.com
               </a>
             </p>
           </address>

@@ -53,7 +53,7 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-lg text-brand-gray-dark/90 text-center max-w-3xl mx-auto mb-16"
         >
-          Constituidos formalmente en 2017, INAPECC proyecta su experiencia y servicios a nivel internacional. Brindamos asesoría y consultoría de alto nivel a instituciones educativas, profesionales y empresas que buscan la excelencia y el cumplimiento normativo en sus programas.
+          Constituidos formalmente en 2017, INAPECC CONSULTORÍA proyecta su experiencia y servicios a nivel internacional. Brindamos asesoría y consultoría de alto nivel a instituciones educativas, profesionales y empresas que buscan la excelencia y el cumplimiento normativo en sus programas.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

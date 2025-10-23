@@ -86,6 +86,9 @@ export default function Contact() {
                 <p className="font-semibold text-brand-gray-dark">
                   <span className="font-bold text-brand-dark">Oficina:</span> 55 5533 3061
                 </p>
+                <p className="font-semibold text-brand-gray-dark">
+                  <span className="font-bold text-brand-dark">Correo:</span> contacto@inapecc.com
+                </p>
               </div>
             </div>
           </motion.div>

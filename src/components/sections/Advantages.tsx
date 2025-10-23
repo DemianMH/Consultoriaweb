@@ -39,7 +39,7 @@ export default function Advantages() {
           <div className="aspect-square bg-brand-gray-medium rounded-lg shadow-2xl overflow-hidden">
            <Image
             src="/equipo.jpg"
-            alt="Equipo de INAPECC en sesión de trabajo"
+            alt="Equipo de INAPECC CONSULTORA en sesión de trabajo"
             width={600} 
             height={600} 
             className="w-full h-full object-cover"
