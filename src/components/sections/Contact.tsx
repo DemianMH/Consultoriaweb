@@ -1,7 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
-import { FaCalendarAlt, FaWhatsapp } from 'react-icons/fa'
-import Image from 'next/image'
+// Agregamos FaCalendarAlt y FaUsers
+import { FaCalendarAlt, FaWhatsapp, FaUsers } from 'react-icons/fa'
+// Ya no necesitamos Image aquí
+// import Image from 'next/image' 
 
 export default function Contact() {
   return (
@@ -49,34 +51,19 @@ export default function Contact() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h3 className="font-display text-2xl font-bold text-brand-dark mb-6">
-              Atención Personalizada
-            </h3>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="flex items-start space-x-6">
-                
-                <div className="w-24 h-24 rounded-full bg-brand-gray-medium flex-shrink-0 overflow-hidden">
-                  <Image
-                    src="/persona.png"
-                    alt="Foto de Lic. Moisés Bello Serrano"
-                    width={96}
-                    height={96}
-                    className="w-full h-full "
-                  />
-                </div>
-
-                <div>
-                  <h4 className="font-display text-xl font-bold text-brand-dark">
-                    Lic. Moisés Bello Serrano
-                  </h4>
-                  <p className="text-brand-accent font-semibold mb-2">
-                    Pedagogo, UNAM
-                  </p>
-                  <p className="text-brand-gray-dark/90">
-                    Con 30 años de experiencia en el sector educativo.
-                  </p>
-                </div>
+            {/* Moví el H3 aquí para que sea el título de la tarjeta */}
+            <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+              {/* --- INICIO DEL CAMBIO --- */}
+              <div className="flex flex-col items-center text-center">
+                <FaUsers className="text-4xl text-brand-accent mb-4" />
+                <h3 className="font-display text-2xl font-bold text-brand-dark mb-4">
+                  Atención Personalizada
+                </h3>
+                <p className="text-brand-gray-dark/90 mb-6">
+                  Un equipo de expertos está listo para atender tu consulta y resolver todas tus dudas.
+                </p>
               </div>
+              {/* --- FIN DEL CAMBIO --- */}
               
               <div className="border-t border-brand-gray-light mt-6 pt-6 space-y-4">
                 <p className="font-semibold text-brand-gray-dark">
