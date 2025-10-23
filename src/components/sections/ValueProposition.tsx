@@ -2,11 +2,11 @@
 import { motion } from 'framer-motion'
 
 const propositions = [
-  'Equipo de especialistas en Diseño Curricular y RVOES.',
+  'Equipo de especialistas en pedagogía, gestión educativa y procesos de RVOE.',
   'Resolvemos situaciones, contamos con convenios y vinculación.',
   'Servicio integral de acompañamiento para obtener su RVOE.',
   'Experiencia en Programas de Salud y obtención OTAF.',
-  'Conocimiento de procesos estatales y municipales en 23 estados.',
+  'Conocimiento profundo de procesos normativos y trámites para RVOE con alcance nacional e internacional.',
   'Planes de trabajo innovadores para escuelas nuevas y consolidadas.',
 ]
 

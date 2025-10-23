@@ -24,8 +24,9 @@ export default function TargetAudience() {
             <div className="font-display font-bold text-brand-dark text-8xl leading-none">
               60%
             </div>
+            {/* --- CORRECCIÓN AQUÍ --- */}
             <p className="font-semibold text-brand-accent text-lg max-w-xs">
-              De instituciones en el país no cuenta con RVOES propios
+              De muchas instituciones educativas que no cuentan con RVOES propios
             </p>
           </div>
         </motion.div>

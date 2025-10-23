@@ -19,17 +19,17 @@ const aboutItems = [
   {
     icon: FaBullseye,
     title: 'Misión',
-    text: 'Elevar la calidad educativa que ofrecen las instituciones mediante el diseño de currículos innovadores y gestión eficiente de procesos solicitud de RVOE.',
+    text: 'Elevar la calidad educativa de las instituciones a través del diseño de currículos innovadores y la gestión eficiente de sus programas para asegurar su validez oficial.',
   },
   {
     icon: FaEye,
     title: 'Visión',
-    text: 'Ser la consultora líder en diseño curricular y gestión de RVOE en el 2026, reconocida por nuestra capacidad de innovar y transformar la educación en México.',
+    text: 'Ser la consultora referente a nivel internacional en gestión educativa y obtención de reconocimientos de validez oficial, impulsando la excelencia y la transformación de la educación a través de la innovación.',
   },
   {
     icon: FaHandshake,
     title: 'Compromiso',
-    text: 'Colaborar con nuestros clientes con estrategias eficientes para desarrollar programas académicos que cumplan con los más altos estándares de excelencia.',
+    text: 'Colaborar con nuestros clientes implementando estrategias eficientes para desarrollar programas académicos que cumplan con los más altos estándares de excelencia.',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-lg text-brand-gray-dark/90 text-center max-w-3xl mx-auto mb-16"
         >
-          Constituidos el 13 de junio de 2017 en Querétaro, actualmente nos encontramos en 23 estados de la República Mexicana, brindando asesoría y consultoría a instituciones educativas y empresas.
+          Constituidos formalmente en 2017, INAPECC proyecta su experiencia y servicios a nivel internacional. Brindamos asesoría y consultoría de alto nivel a instituciones educativas, profesionales y empresas que buscan la excelencia y el cumplimiento normativo en sus programas.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

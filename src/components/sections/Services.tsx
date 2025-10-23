@@ -4,9 +4,9 @@ import { FaUniversity, FaScroll, FaClipboardCheck, FaFileSignature, FaLaptopCode
 
 const services = [
   { icon: FaUniversity, title: 'Incubadora de instituciones educativas' },
-  { icon: FaScroll, title: 'Gestión de RVOE federal y estatal' },
+  { icon: FaScroll, title: 'Gestión de RVOE nacional e internacional' },
   { icon: FaClipboardCheck, title: 'Gestión para autorización (Acuerdo 286)' },
-  { icon: FaFileSignature, title: 'Diseño de planes y programas de estudio' },
+  { icon: FaFileSignature, title: 'Estructuración de planes y programas de estudio' },
   { icon: FaLaptopCode, title: 'Diseño institucional y plataforma (MOODLE)' },
   { icon: FaHeartbeat, title: 'Programas de salud y solicitudes OTA (CIFRHS)' },
 ]

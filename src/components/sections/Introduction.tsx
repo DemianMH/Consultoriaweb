@@ -1,5 +1,6 @@
 'use client'
 import { motion, Variants } from 'framer-motion'
+import Image from 'next/image'
 
 const variants: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -19,18 +20,14 @@ export default function Introduction() {
       <div className="container mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="font-display text-4xl font-bold text-brand-dark mb-6">
-            Introducción
+            Sobre Nosotros
           </h2>
           <div className="space-y-4 text-lg text-brand-gray-dark/90">
             <p>
-              Somos una firma de consultoría especializada con la experiencia pedagógica en innovación educativa en soluciones de gestión y desarrollo curricular.
+              Somos una firma de consultoría pedagógica de alcance internacional, especializada en la innovación educativa y en soluciones integrales para la gestión y desarrollo curricular.
             </p>
             <p>
-              {/* --- CORRECCIÓN AQUÍ --- */}
-              Nuestra historia se remonta a 1998, y a partir del 13 de junio de 2017, surgimos como empresa constituida &ldquo;Consultoría en Innovación Pedagógica y Certificaciones Profesionales S.C.&rdquo; en Querétaro.
-            </p>
-            <p>
-              A través de nuestra experiencia, hemos ayudado a más de 80 Instituciones Educativas a obtener sus proyectos curriculares.
+              Nuestra trayectoria inicia en 1998, consolidándonos formalmente en 2017. Con más de 80 instituciones educativas transformadas, nuestra experiencia abarca la creación de proyectos curriculares, la gestión de RVOE y la autorización de instituciones evaluadoras bajo el Acuerdo 286.
             </p>
           </div>
         </div>
@@ -41,9 +38,13 @@ export default function Introduction() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
         >
-          <div className="aspect-video bg-brand-gray-medium rounded flex items-center justify-center">
-            <p className="text-brand-dark">Aquí foto profesional del equipo o instalaciones</p>
-          </div>
+          <Image
+            src="/consultoria-educacion.jpg"
+            alt="Equipo de INAPECC en consultoría profesional"
+            width={800}  // Ratio 16:9
+            height={450} // Ratio 16:9
+            className="w-full h-full object-cover" // Hará que la imagen llene el contenedor
+          />
         </motion.div>
       </div>
     </motion.section>

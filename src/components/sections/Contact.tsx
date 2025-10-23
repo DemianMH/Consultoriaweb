@@ -1,5 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
+import { FaCalendarAlt, FaWhatsapp } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -20,34 +22,25 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="flex flex-col justify-center"
           >
-            <h3 className="font-display text-2xl font-bold text-brand-dark mb-6">
+            <h3 className="font-display text-3xl font-bold text-brand-dark mb-6 text-center">
               Agenda una Consulta
             </h3>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-brand-gray-dark">Nombre</label>
-                <input type="text" id="name" name="name" className="mt-1 block w-full px-4 py-3 border border-brand-gray-medium rounded-md shadow-sm focus:ring-brand-dark focus:border-brand-dark" />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-brand-gray-dark">Email</label>
-                <input type="email" id="email" name="email" className="mt-1 block w-full px-4 py-3 border border-brand-gray-medium rounded-md shadow-sm focus:ring-brand-dark focus:border-brand-dark" />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-brand-gray-dark">Mensaje</label>
-                <textarea id="message" name="message" rows={5} className="mt-1 block w-full px-4 py-3 border border-brand-gray-medium rounded-md shadow-sm focus:ring-brand-dark focus:border-brand-dark"></textarea>
-              </div>
-              <div>
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full px-6 py-3 bg-brand-dark text-white font-bold rounded-md shadow-lg transition-all duration-300 hover:bg-brand-dark/90"
-                >
-                  Enviar Mensaje
-                </motion.button>
-              </div>
-            </form>
+            <p className="text-center text-lg text-brand-gray-dark/90 mb-8">
+              Haz clic en el botón para ver nuestra disponibilidad y reservar tu consultoría directamente en nuestro calendario.
+            </p>
+            <motion.a
+              href="https://calendly.com/agendaconsultoriainapecc/agenda-tu-consultoria-incubadora-para-escuelas"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-full max-w-md mx-auto px-6 py-4 bg-brand-dark text-white font-bold rounded-md shadow-lg transition-all duration-300 hover:bg-brand-dark/90 flex items-center justify-center space-x-3"
+            >
+              <FaCalendarAlt size={20} />
+              <span>Agendar en Calendly</span>
+            </motion.a>
           </motion.div>
           
           <motion.div
@@ -61,9 +54,17 @@ export default function Contact() {
             </h3>
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-start space-x-6">
-                <div className="w-24 h-24 rounded-full bg-brand-gray-medium flex-shrink-0 flex items-center justify-center">
-                    <p className="text-xs text-brand-dark">Aquí foto de la persona</p>
+                
+                <div className="w-24 h-24 rounded-full bg-brand-gray-medium flex-shrink-0 overflow-hidden">
+                  <Image
+                    src="/persona.png"
+                    alt="Foto de Lic. Moisés Bello Serrano"
+                    width={96}
+                    height={96}
+                    className="w-full h-full "
+                  />
                 </div>
+
                 <div>
                   <h4 className="font-display text-xl font-bold text-brand-dark">
                     Lic. Moisés Bello Serrano
@@ -77,12 +78,26 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="border-t border-brand-gray-light mt-6 pt-6 space-y-3">
+              <div className="border-t border-brand-gray-light mt-6 pt-6 space-y-4">
                 <p className="font-semibold text-brand-gray-dark">
-                  <span className="font-bold text-brand-dark">Dirección:</span> Av. Insurgentes Sur 428 Piso 4, Col Roma Sur, Cuauhtemoc CDMX
+                  <span className="font-bold text-brand-dark">Dirección:</span> Av. Paseo de la Reforma 300, Col Juarez, Cuauhtemoc, Ciudad de México
                 </p>
+                
+                <div className="flex items-center space-x-2">
+                  <span className="font-bold text-brand-dark flex-shrink-0">WhatsApp:</span>
+                  <a
+                    href="https://wa.me/5214421399717"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-dark text-white rounded-md text-sm font-bold shadow-sm hover:bg-brand-dark/80 transition-colors"
+                  >
+                    <FaWhatsapp />
+                    <span>442 139 9717</span>
+                  </a>
+                </div>
+
                 <p className="font-semibold text-brand-gray-dark">
-                  <span className="font-bold text-brand-dark">Teléfonos:</span> 442 139 9717 | 55 975 917 20
+                  <span className="font-bold text-brand-dark">Oficina:</span> 55 5533 3061
                 </p>
               </div>
             </div>

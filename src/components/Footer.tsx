@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaFacebook, FaLinkedin } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -17,6 +17,9 @@ export default function Footer() {
             <Link href="https://linkedin.com/in/consultoriaeducativainapecc" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
               <FaLinkedin size={24} />
             </Link>
+            <a href="https://wa.me/5214421399717" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
+              <FaWhatsapp size={24} />
+            </a>
           </div>
         </div>
 
@@ -34,13 +37,17 @@ export default function Footer() {
           <h5 className="font-display text-xl font-semibold text-white mb-4">Contáctanos</h5>
           <address className="not-italic text-sm space-y-3">
             <p className="text-brand-gray-medium">
-              Av. Insurgentes Sur 428 Piso 4 Col Roma Sur, alcaldía Cuauhtemoc CDMX
+              Av. Paseo de la Reforma 300, Col Juarez, Cuauhtemoc, Ciudad de México
             </p>
             <p>
-              <a href="tel:4421399717" className="hover:text-brand-accent transition-colors duration-300">442 139 9717</a>
+              <a href="https://wa.me/5214421399717" target="_blank" rel="noopener noreferrer" className="hover:text-brand-accent transition-colors duration-300">
+                WhatsApp: 442 139 9717
+              </a>
             </p>
             <p>
-              <a href="tel:5597591720" className="hover:text-brand-accent transition-colors duration-300">55 975 917 20</a>
+              <a href="tel:5555333061" className="hover:text-brand-accent transition-colors duration-300">
+                Oficina: 55 5533 3061
+              </a>
             </p>
             <p>
               <a href="https://inapecc.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-accent transition-colors duration-300">

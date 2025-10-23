@@ -1,15 +1,16 @@
 'use client'
 import { motion, Variants } from 'framer-motion'
 import { FaCheckCircle } from 'react-icons/fa'
+import Image from 'next/image'
 
 const advantages = [
-  'Experiencia de más de 15 años en procesos de Gestión RVOE.',
-  'Contamos con RVOES obtenidos y verificables.',
-  'Opiniones Técnicas Favorables por parte de CIFRHS.',
-  'Apoyo total a escuelas nuevas: manuales, reglamentos y más.',
-  'Consultoría 24/7 en todo el proceso y Capacitación Post RVOE.',
-  'Base de programas académicos innovadores y a la medida.',
-  'Servidor de Plataforma Educativa a bajo costo (Cumple SEP).',
+  'Amplia experiencia en la gestión de RVOE y procesos normativos nacionales e internacionales.',
+  'Historial comprobable de RVOEs obtenidos y opiniones técnicas favorables (CIFRHS).',
+  'Soporte integral para instituciones de nueva creación (manuales, reglamentos, estructura).',
+  'Consultoría y acompañamiento, incluyendo capacitación Post-RVOE.',
+  'Desarrollo de programas académicos innovadores y alineados a las tendencias globales.',
+  'Expertise en la gestión del Acuerdo 286 para instituciones evaluadoras.',
+  'Soluciones tecnológicas para plataformas educativas (LMS) conformes a la normativa SEP.',
 ]
 
 const itemVariants: Variants = {
@@ -35,8 +36,14 @@ export default function Advantages() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <div className="aspect-square bg-brand-gray-medium rounded-lg shadow-2xl flex items-center justify-center">
-            <p className="text-brand-dark">Aquí foto de un equipo trabajando o en consultoría</p>
+          <div className="aspect-square bg-brand-gray-medium rounded-lg shadow-2xl overflow-hidden">
+           <Image
+            src="/equipo.jpg"
+            alt="Equipo de INAPECC en sesión de trabajo"
+            width={600} 
+            height={600} 
+            className="w-full h-full object-cover"
+          />
           </div>
         </motion.div>
         <div>
