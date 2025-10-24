@@ -11,7 +11,7 @@ export default function Footer() {
             Evolucionamos tus ideas en innovación educativa y desarrollo curricular.
           </p>
           <div className="flex space-x-4 mt-4">
-            <Link href="https://facebook.com/consultoriaeducativalNAPECC" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
+            <Link href="https://www.facebook.com/consultoriaeducativaINAPECC" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
               <FaFacebook size={24} />
             </Link>
             <Link href="https://linkedin.com/in/consultoriaeducativainapecc" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
