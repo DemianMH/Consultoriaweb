@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaFacebook, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaWhatsapp,FaInstagram } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -13,6 +13,9 @@ export default function Footer() {
           <div className="flex space-x-4 mt-4">
             <Link href="https://www.facebook.com/consultoriaeducativaINAPECC" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
               <FaFacebook size={24} />
+            </Link>
+            <Link href="hhttps://www.instagram.com/consultoria_inapecc" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
+              <FaInstagram size={24} />
             </Link>
             <Link href="https://linkedin.com/in/consultoriaeducativainapecc" target="_blank" rel="noopener noreferrer" className="text-brand-gray-light hover:text-brand-accent transition-colors duration-300">
               <FaLinkedin size={24} />
